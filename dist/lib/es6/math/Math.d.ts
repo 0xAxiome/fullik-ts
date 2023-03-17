@@ -1,0 +1,27 @@
+export declare const math: {
+    PI: number;
+    toRad: number;
+    toDeg: number;
+    pi90: number;
+    twoPI: number;
+    findAngle: (b0: any, b1: any) => any;
+    clamp: (v: any, min: any, max: any) => any;
+    lerp: (x: any, y: any, t: any) => number;
+    rand: (low: any, high: any) => any;
+    randInt: (low: any, high: any) => any;
+    nearEquals: (a: any, b: any, t: any) => boolean;
+    perpendicular: (a: any, b: any) => boolean;
+    genPerpendicularVectorQuick: (v: any) => any;
+    genPerpendicularVectorFrisvad: (v: any) => any;
+    rotateXDegs: (v: any, angle: any) => any;
+    rotateYDegs: (v: any, angle: any) => any;
+    rotateZDegs: (v: any, angle: any) => any;
+    withinManhattanDistance: (v1: any, v2: any, distance: any) => boolean;
+    manhattanDistanceBetween: (v1: any, v2: any) => number;
+    distanceBetween: (v1: any, v2: any) => number;
+    unwrapDeg: (r: any) => number;
+    unwrapRad: (r: any) => number;
+    rotateDegs: (v: any, angle: any) => any;
+    validateDirectionUV: (directionUV: any) => void;
+    validateLength: (length: any) => void;
+};

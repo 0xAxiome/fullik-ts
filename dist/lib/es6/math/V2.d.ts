@@ -1,0 +1,32 @@
+export declare class V2 {
+    isVector2: boolean;
+    y: number;
+    x: number;
+    constructor(x?: number, y?: number);
+    set(x: any, y: any): this;
+    distanceTo(v: any): number;
+    distanceToSquared(v: any): number;
+    multiplyScalar(scalar: any): this;
+    divideScalar(scalar: any): this;
+    length(): number;
+    normalize(): this;
+    normalised(): V2;
+    lengthSq(): number;
+    add(v: any): this;
+    plus(v: any): V2;
+    min(v: any): this;
+    minus(v: any): V2;
+    divideBy(value: any): V2;
+    dot(a: any, b?: any): number;
+    negate(): this;
+    negated(): V2;
+    clone(): V2;
+    copy(v: any): this;
+    cross(v: any): number;
+    sign(v: any): 1 | -1;
+    approximatelyEquals(v: any, t: any): boolean;
+    rotate(angle: any): this;
+    angleTo(v: any): number;
+    getSignedAngle(v: any): number;
+    constrainedUV(baselineUV: any, min: any, max: any): this;
+}
