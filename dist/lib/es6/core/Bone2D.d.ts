@@ -1,0 +1,30 @@
+import { Joint2D } from "./Joint2D.js";
+import { V2 } from "../math/V2";
+export declare class Bone2D {
+    isBone2D: boolean;
+    start: V2;
+    end: V2;
+    length: any;
+    joint: Joint2D;
+    globalConstraintUV: V2;
+    boneConnectionPoint: number;
+    color: any;
+    name: string;
+    constructor(start: any, end: any, directionUV?: any, length?: any, clockwiseDegs?: any, anticlockwiseDegs?: any, color?: any);
+    clone(): Bone2D;
+    setName(name: any): void;
+    setColor(c: any): void;
+    setBoneConnectionPoint(bcp: any): void;
+    setStartLocation(v: any): void;
+    setEndLocation(v: any): void;
+    setLength(length: any): void;
+    setGlobalConstraintUV(v: any): void;
+    setJoint(joint: any): void;
+    setClockwiseConstraintDegs(angleDegs: any): void;
+    setAnticlockwiseConstraintDegs(angleDegs: any): void;
+    setJointConstraintCoordinateSystem(coordSystem: any): void;
+    getGlobalConstraintUV(): V2;
+    getBoneConnectionPoint(): number;
+    getDirectionUV(): V2;
+    getLength(): number;
+}
